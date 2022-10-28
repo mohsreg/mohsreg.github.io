@@ -13,6 +13,7 @@
 			$(function () {
 				$("#header").load("/commons/header.html");
 				$("#footer").load("/commons/footer.html");
+				$("#navbar").load("/commons/navbar.html");
 			});
 		</script>
 	</head>
@@ -20,7 +21,7 @@
 	<script>
 		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 		function NavbarMenuToggle() {
-			var x = document.getElementById("myTopnav");
+			var x = document.getElementById("navbar");
 			if (x.className === "topnav") {
 				x.className += " responsive";
 			} else {
@@ -30,6 +31,8 @@
 	</script>
 
 	<body>
+		<div class="topnav" id="navbar"></div>
+
 		<!-- Head Include -->
 		<div id="header"></div>
 
@@ -38,19 +41,6 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
-
-		<div class="topnav" id="myTopnav">
-			<a href="/homepage.html" class="active">Home</a>
-			<a href="https://linktr.ee/mohsreg">Social</a>
-			<a href="#about">About</a>
-			<a
-				href="javascript:void(0);"
-				class="icon"
-				onclick="NavbarMenuToggle()"
-			>
-				<i class="fa fa-bars"></i>
-			</a>
-		</div>
 
 		<p>
 			<img
