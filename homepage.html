@@ -1,111 +1,112 @@
-<header>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Khula:wght@300;400;600;700;800&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-		rel="stylesheet"
-	/>
-	<link rel="stylesheet" href="./homepage.css" />
-</header>
+<html>
+	<head>
+		<!-- CSS Files -->
+		<link rel="stylesheet" href="./homepage.css" />
 
-<script>
-	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-	function NavbarMenuToggle() {
-		var x = document.getElementById("myTopnav");
-		if (x.className === "topnav") {
-			x.className += " responsive";
-		} else {
-			x.className = "topnav";
-		}
-	}
-</script>
-
-<body class="body">
-	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-	<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-	/>
-
-	<div class="topnav" id="myTopnav">
-		<a href="#home" class="active">Home</a>
-		<a href="#social">Social</a>
-		<a href="#about">About</a>
-		<a href="javascript:void(0);" class="icon" onclick="NavbarMenuToggle()">
-			<i class="fa fa-bars"></i>
-		</a>
-	</div>
-
-	<p>
-		<img
-			class="mohsregAnimated"
-			src="./images/MohsregBranding/mohsreg_transparent_animated.gif"
-		/>
-	</p>
-
-	<h1 align="center" class="intro-header">Hi There!</h1>
-	<p align="center" class="casual-text">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac orci
-		pharetra, auctor ex eu, malesuada leo. Cras mollis pulvinar turpis. In
-		ac sapien fringilla, gravida dolor vitae, sollicitudin arcu.
-	</p>
-
-	<!-- Add a placeholder for the Twitch embed -->
-	<div id="twitch-embed" align="center"></div>
-
-	<!-- Load the Twitch embed JavaScript file -->
-	<script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-	<!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
-	<script type="text/javascript">
-		new Twitch.Embed("twitch-embed", {
-			width: "70%",
-			height: 480,
-			channel: "mohsreg",
-			// Only needed if this page is going to be embedded on other websites
-			parent: ["embed.example.com", "othersite.example.com"],
-		});
-	</script>
-
-	<div class="typewriter-basic">
-		<style scoped>
-			.container {
-				width: 100%;
-				display: flex;
-				align-items: center;
-				align-content: center;
-				justify-content: center;
-			}
-			.container h1 {
-				font-size: 30px;
-				font-family: "JetBrains Mono";
-				font-weight: 750;
-				text-align: center;
-			}
-			.auto-type {
-				color: #e94560;
-			}
-		</style>
-		<div class="container">
-			<h1> <span class="auto-type"></span></h1>
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		<title></title>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous"
+		></script>
 		<script>
-			var typed = new Typed(".auto-type", {
-				strings: [
-					"Follow me on Twitch!",
-					"Subscribe to me on YouTube",
-					"Follow me on GitHub",
-					"Chat with me on Discord",
-					"Follow me on Twitter!",
-					"Join GrabFreeGames and never miss a giveaway again!",
-					"the cake is a lie.",
-					"mohsreg didn\'t create this code ",
-				],
-				typeSpeed: 50,
-				backSpeed: 50,
-				loop: true,
+			$(function () {
+				$("#header").load("/commons/header.html");
+				$("#footer").load("/commons/footer.html");
 			});
 		</script>
-	</div>
-</body>
+	</head>
+
+	<script>
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		function NavbarMenuToggle() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
+	<body>
+		<!-- Head Include -->
+		<div id="header"></div>
+
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+
+		<div class="topnav" id="myTopnav">
+			<a href="#home" class="active">Home</a>
+			<a href="#social">Social</a>
+			<a href="#about">About</a>
+			<a
+				href="javascript:void(0);"
+				class="icon"
+				onclick="NavbarMenuToggle()"
+			>
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+		<p>
+			<img
+				class="mohsregAnimated"
+				src="./images/MohsregBranding/mohsreg_transparent_animated.gif"
+			/>
+		</p>
+
+		<h1 align="center" class="intro-header">Hi There!</h1>
+		<p align="center" class="casual-text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac
+			orci pharetra, auctor ex eu, malesuada leo. Cras mollis pulvinar
+			turpis. In ac sapien fringilla, gravida dolor vitae, sollicitudin
+			arcu.
+		</p>
+
+		<!-- Add a placeholder for the Twitch embed -->
+		<div id="twitch-embed" align="center"></div>
+
+		<!-- Load the Twitch embed JavaScript file -->
+		<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+		<!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+		<script type="text/javascript">
+			new Twitch.Embed("twitch-embed", {
+				width: "70%",
+				height: 480,
+				channel: "mohsreg",
+				// Only needed if this page is going to be embedded on other websites
+				parent: ["embed.example.com", "othersite.example.com"],
+			});
+		</script>
+
+		<div class="typewriter-basic">
+			<div class="typewriter-div">
+				<h1><span class="auto-type"></span></h1>
+			</div>
+			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+			<script>
+				var typed = new Typed(".auto-type", {
+					strings: [
+						"Follow me on Twitch!",
+						"Subscribe to me on YouTube",
+						"Follow me on GitHub",
+						"Chat with me on Discord",
+						"Follow me on Twitter!",
+						"Join GrabFreeGames and never miss a giveaway again!",
+						"the cake is a lie.",
+						"mohsreg didn't create this code ",
+					],
+					typeSpeed: 50,
+					backSpeed: 50,
+					loop: true,
+				});
+			</script>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>
