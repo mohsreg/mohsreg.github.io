@@ -8,7 +8,7 @@
 .navbar-li-a {
 	font-family: "Lexend Deca", sans-serif;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 1.8vw;
 	color: #edf0f1;
 	text-decoration: none;
 }
@@ -22,7 +22,7 @@
 }
 
 .navbar-logo {
-	width: 10em;
+	width: 12em;
 	cursor: pointer;
 }
 
@@ -37,12 +37,22 @@
 .nav-links li a {
 	transition: all 0.3s ease 0s;
 	padding: 1em 2em;
-	border-radius: 8px;
+	border-radius: 1em;
+	background-color: #e06c00;
+	color: black;
 }
 
 .nav-links li a:hover {
 	transition: all 0.3s ease 0s;
-	background-color: #37718e46;
+	background-color: #0b4ce3;
+	color: white;
+}
+
+.nav-links li a:active {
+	transition: all 0.1s ease 0s;
+	padding: 0.7em 1.4em;
+	background-color: #0b4ce3;
+	color: white;
 }
 
 .navbar-greet {

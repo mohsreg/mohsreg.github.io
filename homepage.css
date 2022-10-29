@@ -1,5 +1,5 @@
 body {
-	background-color: #171738;
+	background-color: #081f54;
 	font-family: "Karla", sans-serif;
 	font-size: 20;
 	color: white;
@@ -7,7 +7,7 @@ body {
 
 .intro-header {
 	font-family: "Lexend Deca", sans-serif;
-	color: #db5461;
+	color: #e06c00;
 	animation: fadeUpText 1s ease-in-out 0.5s;
 	-webkit-animation: fadeUpText 1s ease-in-out;
 }

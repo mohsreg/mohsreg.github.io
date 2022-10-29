@@ -1,12 +1,13 @@
 .footer-root {
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.434);
+	color: #e06c00;
 	width: 100%;
 	height: auto;
 	margin: auto;
 	border-radius: 8px;
 	box-sizing: border-box;
 	padding: 10px 30px;
-	font-size: 0.7em;
+	font-size: 1vw;
 }
 
 .footer-link {
