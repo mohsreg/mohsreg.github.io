@@ -23,6 +23,7 @@
 
 .navcontainer img {
 	width: 30vw;
+	user-select: none;
 }
 
 .navroot {
@@ -100,6 +101,7 @@
 	transition: 0.3s;
 	padding: 8px 16px;
 	border-radius: 99px;
+	user-select: none;
 }
 
 .navmenu a:hover {
