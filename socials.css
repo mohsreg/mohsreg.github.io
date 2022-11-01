@@ -1,0 +1,60 @@
+body {
+	background-color: #081f54;
+	color: white;
+	text-align: center;
+}
+
+.mohsreg-caption {
+	font-family: "Epilogue", sans-serif;
+	font-weight: 700;
+	line-height: 180%;
+	font-size: 16;
+}
+
+.mohsreg-caption span {
+	color: rgb(137, 137, 137);
+}
+
+.mohsregAnimated {
+	width: 95vw;
+	height: 200px;
+	margin: auto;
+}
+
+.mohsregAnimated img {
+	height: 100%;
+	-webkit-mask-image: -webkit-linear-gradient(
+		right,
+		rgba(0, 0, 0, 1) 50%,
+		rgba(0, 0, 0, 0) 90%
+	);
+	pointer-events: none;
+	user-select: none;
+}
+
+.iconset-container {
+	margin: auto;
+	width: 30vw;
+	height: 6vh;
+}
+
+.socials-iconset {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 2;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 100%;
+}
+
+.socials-iconset img {
+	height: 100%;
+	filter: invert(1);
+	transition: all 200ms ease;
+	user-select: none;
+}
+
+.socials-iconset img:hover {
+	scale: 1.2;
+	filter: invert(1);
+}

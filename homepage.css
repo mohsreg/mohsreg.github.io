@@ -10,11 +10,13 @@ body {
 	color: #e06c00;
 	animation: fadeUpText 1s ease-in-out 0.5s;
 	-webkit-animation: fadeUpText 1s ease-in-out;
+	text-align: center;
 }
 
 .casual-text {
 	animation: fadeUpText 1s ease-in-out 1s;
 	-webkit-animation: fadeUpText 1.2s ease-in-out;
+	text-align: center;
 }
 
 @keyframes fadeUpText {
@@ -38,28 +40,31 @@ body {
 		transform: translateY(0%);
 	}
 }
-
 .mohsregAnimated {
-	display: block;
+	width: 300px;
+	height: 300px;
 	margin: auto;
-	height: auto;
-	position: inherit;
-	padding: 25px;
+}
+
+.mohsregAnimated img {
+	width: auto;
+	height: 100%;
 	-webkit-mask-image: -webkit-linear-gradient(
 		right,
 		rgba(0, 0, 0, 1) 50%,
 		rgba(0, 0, 0, 0) 90%
 	);
-	animation: slideInRight 1.3s ease-in-out;
 	pointer-events: none;
+	user-select: none;
+	animation: slideInRight 1.3s ease-in-out;
 }
 
 @keyframes slideInRight {
 	0% {
-		transform: translateX(-500%);
+		transform: translateX(-110vw);
 	}
 	100% {
-		transform: translateX(0%);
+		transform: translateX(0px);
 	}
 }
 
@@ -77,5 +82,14 @@ body {
 	text-align: center;
 }
 .auto-type {
-	color: #f49d37;
+	color: #e06c00;
+}
+
+.twitch-embed {
+	height: 480px;
+	position: absolute;
+	margin: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
