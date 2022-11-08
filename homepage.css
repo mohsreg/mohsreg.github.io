@@ -7,16 +7,11 @@ body {
 }
 
 .intro-header {
-	font-family: "Lexend Deca", sans-serif;
+	font-family: "Epilogue", sans-serif;
+	font-weight: 400;
 	color: #e06c00;
 	animation: fadeUpText 1s ease-in-out 0.5s;
 	-webkit-animation: fadeUpText 1s ease-in-out;
-	text-align: center;
-}
-
-.casual-text {
-	animation: fadeUpText 1s ease-in-out 1s;
-	-webkit-animation: fadeUpText 1.2s ease-in-out;
 	text-align: center;
 }
 
@@ -41,6 +36,16 @@ body {
 		transform: translateY(0%);
 	}
 }
+
+.casual-text,
+.casual-text p,
+.casual-text a {
+	animation: fadeUpText 1s ease-in-out 1s;
+	-webkit-animation: fadeUpText 1.2s ease-in-out;
+	text-align: center;
+	color: white;
+}
+
 .mohsregAnimated {
 	width: 300px;
 	height: 300px;

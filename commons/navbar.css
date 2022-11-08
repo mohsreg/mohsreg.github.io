@@ -2,6 +2,7 @@
 	--primary: #4990f9;
 	--light: #eeeeee;
 	--dark: #212121;
+	--darktransparent: #212121b7;
 }
 
 .navheader {
@@ -35,6 +36,11 @@
 	background-color: var(--dark);
 	padding: 16px 32px;
 	border-bottom: 3px solid var(--primary);
+	transition: all 0.4s;
+}
+
+.navroot.scrolled {
+	background-color: var(--darktransparent);
 }
 
 .hamburger {
