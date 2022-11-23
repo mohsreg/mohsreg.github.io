@@ -1,8 +1,11 @@
 Dominant Color:
 #003366
+- ![#003366](https://placehold.co/15x15/003366/003366.png) `#003366`
 
 Complement Color:
 #727787
+- ![#727787](https://placehold.co/15x15/727787/727787.png) `#727787`
 
 Accent Color:
 #61172B
+- ![#61172B](https://placehold.co/15x15/61172B/61172B.png) `#61172B`
