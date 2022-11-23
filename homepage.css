@@ -1,15 +1,29 @@
+:root {
+	--orange: #e06c00;
+	--teal: #23b4b4;
+	--dark-blue: #081f54;
+	--dark: #212121;
+	--deep-purple: #252539;
+	--deep-blue: #202043;
+	--mohsreg-blue: #003366;
+
+	--complement: var(--teal);
+	--bg-color: var(--deep-blue);
+}
+
 body {
-	background-color: #081f54;
+	background-color: var(--bg-color);
 	font-family: "Karla", sans-serif;
 	font-size: 20;
 	color: white;
 	padding-top: 120px;
+	line-height: 1.4;
 }
 
 .intro-header {
 	font-family: "Epilogue", sans-serif;
 	font-weight: 400;
-	color: #e06c00;
+	color: var(--complement);
 	animation: fadeUpText 1s ease-in-out 0.5s;
 	-webkit-animation: fadeUpText 1s ease-in-out;
 	text-align: center;
@@ -88,7 +102,7 @@ body {
 	text-align: center;
 }
 .auto-type {
-	color: #e06c00;
+	color: var(--complement);
 }
 
 .twitch-embed {
