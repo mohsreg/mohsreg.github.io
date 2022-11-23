@@ -92,18 +92,25 @@
 				<input type="checkbox" id="twitch-dropdown" />
 				<label for="twitch-dropdown">Twitch Stream</label>
 				<div class="collapsible-content">
-					<h2>Watch the latest Stream!</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu
-						fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-						non proident, sunt in culpa qui officia deserunt mollit
-						anim id est laborum.
-					</p>
+					<!-- Add a placeholder for the Twitch embed -->
+					<div id="twitch-embed" align="center"></div>
+
+					<!-- Load the Twitch embed JavaScript file -->
+					<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+					<!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+					<script type="text/javascript">
+						new Twitch.Embed("twitch-embed", {
+							width: "70%",
+							height: 480,
+							channel: "mohsreg",
+							// Only needed if this page is going to be embedded on other websites
+							parent: [
+								"embed.example.com",
+								"othersite.example.com",
+							],
+						});
+					</script>
 				</div>
 			</div>
 		</div>
@@ -127,5 +134,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Footer Include -->
+		<div id="footer"></div>
 	</body>
 </html>
