@@ -22,9 +22,21 @@
 	justify-content: space-between;
 }
 
+/* Mobile Settings */
+.mohsreg-title {
+	text-decoration: none;
+	font-family: "Karla", sans-serif;
+	font-weight: 300;
+	font-size: 50;
+}
+
+/* Mobile Settings */
 .navcontainer img {
-	width: 30vw;
+	width: auto;
+	height: 100px;
 	user-select: none;
+
+	margin: 0 10px 0 0;
 }
 
 .navroot {
@@ -114,6 +126,7 @@
 	background-color: var(--primary);
 }
 
+/* PC settings */
 @media (min-width: 29cm) {
 	.hamburger {
 		display: none;
@@ -122,7 +135,11 @@
 		display: flex;
 	}
 	.navcontainer img {
-		width: 200px;
+		height: 60px;
+		width: auto;
+	}
+	.mohsreg-title {
+		font-size: 30;
 	}
 }
 
