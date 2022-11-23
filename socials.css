@@ -59,3 +59,38 @@ body {
 	scale: 1.2;
 	filter: invert(1);
 }
+
+.twitch-color:hover {
+	filter: brightness(0) saturate(100%) invert(27%) sepia(66%) saturate(2454%)
+		hue-rotate(249deg) brightness(108%) contrast(105%);
+}
+
+.twitter-color:hover {
+	filter: brightness(0) saturate(100%) invert(57%) sepia(93%) saturate(2946%)
+		hue-rotate(176deg) brightness(98%) contrast(94%);
+}
+
+.youtube-color:hover {
+	filter: brightness(0) saturate(100%) invert(21%) sepia(97%) saturate(6940%)
+		hue-rotate(8deg) brightness(94%) contrast(129%);
+}
+
+.tiktok-color:hover {
+	filter: brightness(0) saturate(100%) invert(11%) sepia(75%) saturate(7067%)
+		hue-rotate(336deg) brightness(109%) contrast(107%);
+}
+
+.telegram-color:hover {
+	filter: brightness(0) saturate(100%) invert(58%) sepia(88%) saturate(1877%)
+		hue-rotate(169deg) brightness(93%) contrast(92%);
+}
+
+.instagram-color:hover {
+	filter: brightness(0) saturate(100%) invert(38%) sepia(29%) saturate(4802%)
+		hue-rotate(325deg) brightness(93%) contrast(92%);
+}
+
+.discord-color:hover {
+	filter: brightness(0) saturate(100%) invert(38%) sepia(77%) saturate(1387%)
+		hue-rotate(218deg) brightness(91%) contrast(111%);
+}
