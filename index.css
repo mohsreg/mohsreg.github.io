@@ -1,3 +1,13 @@
 body {
 	background-color: #313866;
 }
+.avatar_full-body {
+	height: 90vh;
+	margin: auto;
+	display: block;
+	transform: scaleX(-100%);
+}
+.everything {
+	width: 100%;
+	height: 100%;
+}
