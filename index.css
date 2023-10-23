@@ -1,5 +1,9 @@
+@font-face {
+	font-family: "vcr-7";
+	src: url("/font/vcr-7.otf") format("opentype");
+}
 body {
-	background-color: #313866;
+	background-color: #454555;
 	color: white;
 	font-family: "Comic Sans MS", sans-serif;
 }
@@ -25,8 +29,35 @@ body {
 .maintitle {
 	font-size: 5em;
 	font-weight: 700;
+	font-family: "vcr-7", sans-serif;
+	text-shadow: #268f8c 4px 3px 25px;
 }
 
 .status {
 	font-size: 1.25em;
+}
+.twitch-logo:hover {
+	filter: invert(29%) sepia(42%) saturate(1413%) hue-rotate(228deg)
+		brightness(91%) contrast(94%);
+	/* colour=#6441a5 */
+}
+.youtube-logo:hover {
+	filter: invert(12%) sepia(91%) saturate(7445%) hue-rotate(1deg)
+		brightness(107%) contrast(111%);
+	/* colour=#FF0000*/
+}
+.twitter-logo:hover {
+	filter: invert(46%) sepia(88%) saturate(1973%) hue-rotate(180deg)
+		brightness(105%) contrast(90%) saturate(70%);
+	/* colour=#1DA1F2 */
+}
+.discord-logo:hover {
+	filter: invert(60%) sepia(11%) saturate(2287%) hue-rotate(191deg)
+		brightness(90%) contrast(90%);
+	/* colour=#7289da*/
+}
+.mastodon-logo:hover {
+	filter: invert(39%) sepia(45%) saturate(4868%) hue-rotate(227deg)
+		brightness(103%) contrast(101%);
+	/* colour=#6364ff*/
 }
