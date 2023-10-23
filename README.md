@@ -1,5 +1,6 @@
 # Repository for [mohsreg.github.io](https://mohsreg.github.io)
 
+<!--
 ## Quick Access Menu
 
 |    Name    |                HTML                 |                CSS                |
@@ -30,5 +31,7 @@
 -   Open Sans
 -   Epilogue
 
-<!-- Hello World -->
-<!-- Hi There -->
+Hello World -->
+
+Hi There
+go look at my website dummy, there nothing here but pain and tears. mostly from nekoto. mohsreg doesnt have feelings.
