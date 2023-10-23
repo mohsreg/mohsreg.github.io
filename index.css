@@ -14,3 +14,19 @@ body {
 	height: 100%;
 	display: flex;
 }
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 3em;
+	margin-right: 3em;
+}
+.maintitle {
+	font-size: 5em;
+	font-weight: 700;
+}
+
+.status {
+	font-size: 1.25em;
+}
